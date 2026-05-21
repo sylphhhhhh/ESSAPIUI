@@ -1,40 +1,22 @@
-# Absensi App – Flutter
+# Absensi Flutter
 
-Konversi dari React ke Flutter. Semua layar sudah lengkap dalam satu file `main.dart`.
+Aplikasi absensi karyawan berbasis Flutter. Project ini dibuat sebagai prototype tampilan dan alur dasar untuk kebutuhan absensi, aktivitas kerja, notifikasi, dan profil pengguna.
 
-## Cara Pakai
+## Menjalankan Project
 
-1. Buat project Flutter baru:
-   ```
-   flutter create absensi_app
-   cd absensi_app
-   ```
+Pastikan Flutter sudah terinstall, lalu jalankan:
 
-2. Ganti isi `lib/main.dart` dengan file yang disediakan.
+```bash
+flutter pub get
+flutter run
+```
 
-3. Salin `pubspec.yaml` (tidak ada dependencies tambahan, hanya Flutter standar).
+## Struktur Singkat
 
-4. Jalankan:
-   ```
-   flutter run
-   ```
-
-## Fitur yang Diimplementasi
-
-| Halaman | Status |
-|---|---|
-| Home (Beranda) | ✅ Lengkap |
-| Absensi (Check In/Out + Break) | ✅ Interaktif |
-| Aktivitas (dengan filter tab) | ✅ Lengkap |
-| Notifikasi (tandai dibaca) | ✅ Interaktif |
-| Profil | ✅ Lengkap |
-| Modal Pengajuan Cuti | ✅ Dengan date picker |
-| Modal Pengajuan Overtime | ✅ Dengan time picker |
-| Modal Out of Office | ✅ Dengan dropdown |
-| Bottom Navigation | ✅ Dengan floating center button |
+- `lib/main.dart` berisi entry point aplikasi Flutter.
+- `pubspec.yaml` berisi konfigurasi project dan dependency.
+- `android/` dan `web/` berisi konfigurasi platform bawaan Flutter.
 
 ## Catatan
-- Tidak memerlukan package eksternal apapun
-- Semua warna, spacing, dan layout mengikuti desain React asli
-- Semua bagian yang terpotong di versi React sudah diperbaiki dan dilengkapi
-"# ESSAPIUI" 
+
+Project ini masih bisa dikembangkan lagi, terutama untuk integrasi API, autentikasi, penyimpanan data, dan penyesuaian UI sesuai kebutuhan akhir.
